@@ -29,8 +29,17 @@ public class WordsChecker {
 	    return cons;
 	}
 
-	public boolean PalindromeChecker(String string) {
-		return false;
+	public boolean PalindromeChecker(String s) {
+		
+	    String palindromo = s.replaceAll(" ",""); 
+	    palindromo = palindromo.toLowerCase();
+	    int longitud = palindromo.length();
+		for(int i=0; i<longitud/2; i++){
+			if(palindromo.charAt(i)==palindromo.charAt(longitud-1-i));
+			else
+				return false;
+		}
+		return true;
 	}
-
 }
+
