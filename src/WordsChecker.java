@@ -29,4 +29,8 @@ public class WordsChecker {
 	    return cons;
 	}
 
+	public boolean PalindromeChecker(String string) {
+		return false;
+	}
+
 }
