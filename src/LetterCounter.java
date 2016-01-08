@@ -2,9 +2,9 @@
 public class LetterCounter {
 
 	public int VowelCounter(String string) {
-	    int vow = 0; 
+	    int vow = 0;
+
 	    string = string.toLowerCase();
-	  
 	    for (int i = 0; i < string.length(); i++) {
 	        char c = string.charAt(i);
 	        if (c=='a' || c=='e' || c=='i' || c=='o' || c=='u') {
@@ -15,9 +15,9 @@ public class LetterCounter {
 	}
 
 	public int ConsonantCounter(String string) {
-	    int cons = 0; // start the count at zero
+	    int cons = 0; 
+
 	    string = string.toLowerCase();
-	  
 	    for (int i = 0; i < string.length(); i++) {
 	        char c = string.charAt(i);
 	        if (!(c=='a' || c=='e' || c=='i' || c=='o' || c=='u')) {
