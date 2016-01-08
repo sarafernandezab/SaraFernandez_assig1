@@ -1,5 +1,5 @@
 
-public class LetterCounter {
+public class WordsChecker {
 
 	public int VowelCounter(String s) {
 	    int vow = 0;
