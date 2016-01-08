@@ -2,10 +2,10 @@ import junit.framework.TestCase;
 
 public class testWordsChecker extends TestCase{
 
-	public void testLetterCounter(){
+	public void testVowelCounter(){
 		LetterCounter l = new LetterCounter();
-		int result = l.VowelCounter("testing");
-        assertEquals(2, result);
+		int result = l.VowelCounter("testingVow");
+        assertEquals(3, result);
 	}
 	
 	public void testConsonantCounter(){

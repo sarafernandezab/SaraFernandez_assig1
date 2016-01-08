@@ -2,30 +2,29 @@
 public class LetterCounter {
 
 	public int VowelCounter(String string) {
-	    int count = 0; // start the count at zero
-	    // change the string to lowercase
+	    int vow = 0; 
 	    string = string.toLowerCase();
 	  
 	    for (int i = 0; i < string.length(); i++) {
 	        char c = string.charAt(i);
 	        if (c=='a' || c=='e' || c=='i' || c=='o' || c=='u') {
-	            count++;
+	            vow++;
 	        }
 	    }
-	    return count;
+	    return vow;
 	}
 
 	public int ConsonantCounter(String string) {
-	    int count = 0; // start the count at zero
+	    int cons = 0; // start the count at zero
 	    string = string.toLowerCase();
 	  
 	    for (int i = 0; i < string.length(); i++) {
 	        char c = string.charAt(i);
 	        if (!(c=='a' || c=='e' || c=='i' || c=='o' || c=='u')) {
-	            count++;
+	            cons++;
 	        }
 	    }
-	    return count;
+	    return cons;
 	}
 
 }
