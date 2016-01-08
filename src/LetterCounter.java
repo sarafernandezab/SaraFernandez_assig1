@@ -1,7 +1,7 @@
 
 public class LetterCounter {
 
-	public int VocalCounter(String string) {
+	public int VowelCounter(String string) {
 	    int count = 0; // start the count at zero
 	    // change the string to lowercase
 	    string = string.toLowerCase();
