@@ -1,9 +1,10 @@
 
 public class LetterCounter {
 
-	public int VowelCounter(String string) {
+	public int VowelCounter(String s) {
 	    int vow = 0;
 
+	    String string = s.replaceAll(" ",""); 
 	    string = string.toLowerCase();
 	    for (int i = 0; i < string.length(); i++) {
 	        char c = string.charAt(i);
@@ -14,9 +15,10 @@ public class LetterCounter {
 	    return vow;
 	}
 
-	public int ConsonantCounter(String string) {
+	public int ConsonantCounter(String s) {
 	    int cons = 0; 
 
+	    String string = s.replaceAll(" ",""); 
 	    string = string.toLowerCase();
 	    for (int i = 0; i < string.length(); i++) {
 	        char c = string.charAt(i);
