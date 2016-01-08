@@ -8,4 +8,9 @@ public class testWordsChecker extends TestCase{
         assertEquals(2, result);
 	}
 	
+	public void testConsonantCounter(){
+		LetterCounter l = new LetterCounter();
+		int result = l.ConsonantCounter("testingCons");
+		assertEquals(8, result);
+	}
 }

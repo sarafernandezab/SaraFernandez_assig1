@@ -15,4 +15,8 @@ public class LetterCounter {
 	    return count;
 	}
 
+	public int ConsonantCounter(String string) {
+		return 0;
+	}
+
 }
