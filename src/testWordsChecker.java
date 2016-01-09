@@ -1,6 +1,7 @@
 import junit.framework.TestCase;
 
 public class testWordsChecker extends TestCase{
+	//symbols or spaces are not taken into account in this checker
 
 	public void testVowelCounter(){
 		WordsChecker w = new WordsChecker();
@@ -16,7 +17,7 @@ public class testWordsChecker extends TestCase{
 
 	public void testPalindromeChecker(){
 		WordsChecker w = new WordsChecker();
-		boolean result = w.PalindromeChecker("Amore, Roma.");
+		boolean result = w.PalindromeChecker("Amo.re Ro(ma");
 		assertEquals(true, result);
 	}
 }
