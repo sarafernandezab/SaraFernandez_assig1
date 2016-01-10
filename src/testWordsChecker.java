@@ -43,4 +43,15 @@ public class TestWordsChecker extends TestCase{
             //test passed
         }
 	}
+	
+	public void testForExpectedExceptionNullInputPalindrome() throws Exception {
+	    try {
+			WordsChecker w = new WordsChecker();
+	        w.PalindromeChecker (null);
+            fail("This should have thrown an exception");
+
+        } catch (IllegalArgumentException e) {
+            //test passed
+        }
+	}
 }
