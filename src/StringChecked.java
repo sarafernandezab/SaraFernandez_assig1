@@ -1,3 +1,6 @@
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 
 public class StringChecked {
 
@@ -51,7 +54,13 @@ public class StringChecked {
 	}
 
 	public boolean ContainsSymbolsOrNumbers() {
-		return false;
+		Pattern p = Pattern.compile("[^A-Za-z]");
+	    Matcher m = p.matcher(getString());
+	    boolean b = m.find();
+	    if (b == true)
+	        return true;
+	     else
+	         return false;
 	}
 
 }
