@@ -29,6 +29,10 @@ public class StringChecked {
 	public boolean getPalindrome() {
 		return palind;
 	}
+
+	public int getVowel() {
+		return 0;
+	}
 	
 	
 

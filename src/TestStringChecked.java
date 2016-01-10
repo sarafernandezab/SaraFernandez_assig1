@@ -30,5 +30,12 @@ public class TestStringChecked {
         boolean palindExpected = true;
         assertEquals(palind, palindExpected);
     }
+	
+	@Test
+	public void testGetVowel() {
+        int v = s.getVowel();
+        int vExpected = 5;
+        assertEquals(v, vExpected);
+    }
 
 }
