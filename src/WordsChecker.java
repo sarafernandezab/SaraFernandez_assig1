@@ -6,17 +6,22 @@ public class WordsChecker {
 	//symbols or spaces are not taken into account in this checker
 
 	public int VowelCounter(String s) {
-	    int vow = 0;
-
-	    String string = s.replaceAll(" ",""); 
-	    string = string.toLowerCase();
-	    for (int i = 0; i < string.length(); i++) {
-	        char c = string.charAt(i);
-	        if (c=='a' || c=='e' || c=='i' || c=='o' || c=='u') {
-	            vow++;
-	        }
-	    }
-	    return vow;
+		if (s == null) {
+		    throw new IllegalArgumentException("Input cannot be null.");
+		}
+		else{
+			int vow = 0;
+	
+		    String string = s.replaceAll(" ",""); 
+		    string = string.toLowerCase();
+		    for (int i = 0; i < string.length(); i++) {
+		        char c = string.charAt(i);
+		        if (c=='a' || c=='e' || c=='i' || c=='o' || c=='u') {
+		            vow++;
+		        }
+		    }
+		    return vow;
+		}
 	}
 
 	public int ConsonantCounter(String s) {
