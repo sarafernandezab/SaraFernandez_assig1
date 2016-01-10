@@ -32,4 +32,15 @@ public class TestWordsChecker extends TestCase{
             //test passed
         }
 	}
+	
+	public void testForExpectedExceptionNullInputConsonants() throws Exception {
+	    try {
+			WordsChecker w = new WordsChecker();
+	        w.ConsonantCounter (null);
+            fail("This should have thrown an exception");
+
+        } catch (IllegalArgumentException e) {
+            //test passed
+        }
+	}
 }
