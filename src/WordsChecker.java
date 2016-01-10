@@ -42,7 +42,9 @@ public class WordsChecker {
 	}
 
 	public boolean PalindromeChecker(String s) {
-		
+		if (s == null) {
+		    throw new IllegalArgumentException("Input cannot be null.");
+		}
 	    String palindromo = s.replaceAll(" ","");    
 	    palindromo = palindromo.replaceAll("[^A-Za-z]", "").toLowerCase();
 	    int longitud = palindromo.length();
