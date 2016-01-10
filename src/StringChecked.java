@@ -27,8 +27,9 @@ public class StringChecked {
 	}
 
 	public boolean getPalindrome() {
-		// TODO Auto-generated method stub
-		return false;
+		return palind;
 	}
+	
+	
 
 }
