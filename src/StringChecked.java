@@ -38,6 +38,16 @@ public class StringChecked {
 		return cons;
 	}
 	
-	
+	public String toString(){
+		String p;
+		if(getPalindrome()) p="yes";
+		else p="no";
+		
+		return ( "String: " + getString()
+				+ "Palindrome: " + p 
+				+ "Number of vowels: " + getVowel() 
+				+ "Number of vowels: " + getConsonant());
+		
+	}
 
 }
