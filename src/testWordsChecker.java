@@ -1,4 +1,8 @@
 import static org.junit.Assert.assertThat;
+import static org.mockito.Mockito.mock;
+
+import java.util.LinkedList;
+
 import junit.framework.TestCase;
 
 public class TestWordsChecker extends TestCase{

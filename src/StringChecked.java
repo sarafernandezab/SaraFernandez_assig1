@@ -50,4 +50,8 @@ public class StringChecked {
 		
 	}
 
+	public boolean ContainsSymbolsOrNumbers() {
+		return false;
+	}
+
 }
