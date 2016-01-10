@@ -46,7 +46,5 @@ public class WordsChecker {
 		}
 		return true;
 	}
-	
-	
 }
 

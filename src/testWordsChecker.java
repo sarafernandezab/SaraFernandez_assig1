@@ -20,5 +20,4 @@ public class testWordsChecker extends TestCase{
 		boolean result = w.PalindromeChecker("Amo.re Ro(ma");
 		assertEquals(true, result);
 	}
-
 }
