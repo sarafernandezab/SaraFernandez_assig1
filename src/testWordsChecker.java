@@ -1,6 +1,7 @@
+import static org.junit.Assert.assertThat;
 import junit.framework.TestCase;
 
-public class testWordsChecker extends TestCase{
+public class TestWordsChecker extends TestCase{
 	//symbols or spaces are not taken into account in this checker
 
 	public void testVowelCounter(){
@@ -19,5 +20,16 @@ public class testWordsChecker extends TestCase{
 		WordsChecker w = new WordsChecker();
 		boolean result = w.PalindromeChecker("Amo.re Ro(ma");
 		assertEquals(true, result);
+	}
+	
+	public void testForExpectedExceptionNullInputVowels() throws Exception {
+	    try {
+			WordsChecker w = new WordsChecker();
+	        w.VowelCounter (null);
+            fail("This should have thrown an exception");
+
+        } catch (IllegalArgumentException e) {
+            //test passed
+        }
 	}
 }
