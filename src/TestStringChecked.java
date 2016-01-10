@@ -38,4 +38,10 @@ public class TestStringChecked {
         assertEquals(v, vExpected);
     }
 
+	@Test
+	public void testGetConsonant() {
+        int c = s.getConsonant();
+        int cExpected = 10;
+        assertEquals(c, cExpected);
+    }
 }

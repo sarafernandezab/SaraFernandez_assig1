@@ -33,6 +33,10 @@ public class StringChecked {
 	public int getVowel() {
 		return vow;
 	}
+
+	public int getConsonant() {
+		return 0;
+	}
 	
 	
 
