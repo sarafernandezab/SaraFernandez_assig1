@@ -31,7 +31,7 @@ public class StringChecked {
 	}
 
 	public int getVowel() {
-		return 0;
+		return vow;
 	}
 	
 	
