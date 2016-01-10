@@ -44,4 +44,15 @@ public class TestStringChecked {
         int cExpected = 10;
         assertEquals(c, cExpected);
     }
+	
+	@Test
+	public void testToString() {
+		String result;
+		result= "String: " + "Test tube butt set." 
+				+ "Palindrome: " + "yes" 
+				+ "Number of vowels: " + 5 
+				+ "Number of vowels: " + 10 ;
+		assertEquals(s.toString(), result);
+	}
+	
 }
