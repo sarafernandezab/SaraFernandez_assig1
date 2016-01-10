@@ -35,7 +35,7 @@ public class StringChecked {
 	}
 
 	public int getConsonant() {
-		return 0;
+		return cons;
 	}
 	
 	
