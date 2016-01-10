@@ -25,8 +25,10 @@ public class WordsChecker {
 	}
 
 	public int ConsonantCounter(String s) {
-	    int cons = 0; 
-
+		if (s == null) {
+		    throw new IllegalArgumentException("Input cannot be null.");
+		}
+		int cons = 0; 
 	    String string = s.replaceAll(" ",""); 
 	    string = string.toLowerCase();
 	    List<Character> consonants = Arrays.asList( 'b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm',
