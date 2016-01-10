@@ -23,5 +23,12 @@ public class TestStringChecked {
         String nameExpected = "Test tube butt set.";
         assertEquals(name, nameExpected);
     }
+	
+	@Test
+	public void testGetPalindrome() {
+        boolean palind = s.getPalindrome();
+        boolean palindExpected = true;
+        assertEquals(palind, palindExpected);
+    }
 
 }
